@@ -1,0 +1,35 @@
+package main
+
+import (
+    "fmt"
+    "unsafe"
+)
+
+type MyType struct {
+    Value1 int
+    Value2 string
+}
+
+func main() {
+    myValue := MyType{10, "anusha"}
+    pointer := unsafe.Pointer(&myValue)
+    fmt.Printf("Addr: %v Value1 : %d Value2: %s\n",
+        pointer,
+        myValue.Value1,
+        myValue.Value2)
+    ChangeMyValue(myValue)
+    fmt.Printf("Addr: %v Value1 : %d Value2: %s\n",
+        pointer,
+        myValue.Value1,
+        myValue.Value2)
+}
+
+func ChangeMyValue(myValue MyType) {
+    myValue.Value1 = 20
+    myValue.Value2 = "anusha"
+    pointer := unsafe.Pointer(& myValue)
+    fmt.Printf("Addr: %v Value1 : %d Value2: %s\n",
+        pointer,
+        myValue.Value1,
+        myValue.Value2)
+}
