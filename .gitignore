@@ -1,0 +1,17 @@
+package main
+import "fmt"
+func zerovalue(inival int){
+inival=0
+}
+func zeropntr(inipntr *int){
+*inipntr=0
+}
+func main() {
+    i := 1
+    fmt.Println("initial:", i)
+    zerovalue(i)
+    fmt.Println("zerovalue:", i)
+    zeropntr(&i)
+    fmt.Println("zeropntr:", i)
+    fmt.Println("pointer:", &i)
+}
