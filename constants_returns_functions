@@ -1,0 +1,41 @@
+package main
+
+import (
+"fmt"
+)
+
+const (
+	Course = "computer science"
+	College  = "california stste university"
+	Place ="Fresno"
+)
+
+type alaikya struct {
+	name string
+	age  int
+}
+
+func main() {
+
+	var a = alaikya{"kasi", 22}
+
+	MyFunc(a)
+
+}
+
+func MyFunc() {
+	fmt.Println(alaikya.name)
+	fmt.Println(alaikya.age)
+
+	fmt.Println(Course)
+	fmt.Println(College)
+	fmt.Println(Place)
+
+	fmt.Println(ReturnMessage())
+	name, _ := ReturnMessage()
+	fmt.Println(name)
+}
+
+func ReturnMessage() (string, int) {
+	return "anusha", 21
+}
