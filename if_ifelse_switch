@@ -1,0 +1,62 @@
+package main
+
+import (
+"fmt")
+
+type Contact struct {
+	greeting string
+	name     string
+}
+
+func Greeting(contact Contact, mygreetings func(string)) {
+	myGreetingMas, myNameMas := CreateMessage(contact.name, contact.greeting, "howdy")
+
+	mygreetings(myGreetingalaikya)
+	mygreetings(myNamealaikya)
+}
+func CreateMessage(name string, greeting ...string) (myGreeting string, myName string) {
+	myGreeting = greeting[1] + " " + name
+	myName = "\nHey, " + name + "\n"
+	return
+}
+
+func myPrint(s string) {
+	fmt.Print(s)
+}
+
+func myPrintln(s string) {
+	fmt.Println(s)
+}
+
+func main() {
+
+	l := "family"
+	if l == "family" {
+		fmt.Println("You are in the family.")
+	} else {
+		fmt.Println("You are in a different family.")
+	}
+
+	a := "alaikya"
+	switch a {
+	case "alaikya":
+		fmt.Println("sahadeva is your son.")
+	case "anusha":
+		fmt.Println("alaikya is your sister.")
+	case "anupama":
+		fmt.Println(m + ", anusha is your sister.")
+	case "sailaja":
+		fmt.Println("sahadeva is your brother.")
+	case "sunitha":
+		fmt.Println("pratap is your dad.")
+	default:
+		fmt.Println("Your not in this family.")
+	}
+	var t = Contact{"Good to see you,", "alaikya"}
+	Greet(t, myPrint)
+	u := Contact{"Glad you're in class,", "alaikya"}
+	Greet(u, myPrint)
+	v := Contact{}
+	v.greeting = "We're learning great things about web programming,"
+	
+}
