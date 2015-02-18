@@ -16,8 +16,8 @@ func main() {
 		"alaikya": "Namasthe",
 	}
 
-	myGreeting["Harleen"] = "Howdy"
+	myGreeting["alaikya"] = "Howdy"
 
-	fmt.Println(myGreeting["Harleen"])
+	fmt.Println(myGreeting["alaikya"])
 
 }
