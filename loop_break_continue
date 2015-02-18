@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	for i:= 0; i <= 5; i++ {
+		fmt.Println(i)
+	}
+	for i:=0; i <= 10; i++ {
+		if i % 2 == 0 {
+			continue
+		} else {
+			fmt.Println(i)
+		}
+		
+		if i > 6 {
+			break
+		}
+	}
+	mySlice := []int{1,5,15,20,25,30}
+	
+	for i, currentEntry := range mySlice {
+		fmt.Println(i, " - ", currentEntry)
+	}
+	fmt.Print("[2:]")
+	fmt.Println(mySlice[2:])
+}
