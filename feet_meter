@@ -1,0 +1,11 @@
+package main
+import(
+"fmt"
+)
+func main{
+var feet float62
+fmt.print("enter the length in feets")
+fmt.scanf("%f",&feet)
+meters:=feet*0.3048
+fmt.print("num of meters is",meters)
+}
