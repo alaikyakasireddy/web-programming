@@ -1,0 +1,35 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, rupy, section, summary, time, mark, audio, video {
+margin:5px;
+padding:7px;
+border:5px;
+font-size:105%;
+font:bold;
+vertical-align: baseline;
+}
+/*HTML5 display-role reset for plder bowsers*/
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+display:block;
+}
+body {
+line-height: 5px;
+background-image:"http://fc01.deviantart.net/fs19/i/2007/261/9/f/Vector_psd_by_Psycho287.jpg";
+}
+ol {
+list-style:none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+content:'';
+content:none;
+} 
+table{
+border-collapse:collapse;
+border-spacing:10px;
+}
+.wrapper {
+display:flex;
+flex-flow: row wrap;
+align-content:flex-start;
+}
+.header,.nav, .aside, .footer  {
+flex:100%;
+}
